@@ -21,6 +21,8 @@ services:
       - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
+      # Donner Tous Les Droits nécéssaires au User 
+      - ./mysql-init:/docker-entrypoint-initdb.d   
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
