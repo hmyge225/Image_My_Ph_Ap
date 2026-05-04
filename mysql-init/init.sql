@@ -1,3 +1,6 @@
+-- 0. Créer la base de données
+CREATE DATABASE IF NOT EXISTS digifemmes_db;
+
 -- 1. Créer l'utilisateur (s'il n'existe pas déjà)
 CREATE USER IF NOT EXISTS 'user'@'%' IDENTIFIED BY 'password';
 
